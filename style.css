@@ -1,0 +1,116 @@
+#contenedor {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 10 columnas iguales */
+  grid-template-rows: repeat(7, 1fr); /* 7 filas iguales */
+  gap: 10px; /* Espacio entre las celdas de la cuadrícula */
+  padding: 35px;
+  border: 10px solid purple;
+  height: 100vh; /* Ajusta la altura del contenedor para llenar la pantalla */
+  transform: scale(0.8); /* Escala el contenedor al 80% de su tamaño original */
+  transform-origin: top left; /* define el punto desde el cual se escala */
+
+}
+
+
+
+ h1 {
+  color: #32CD32;
+  text-align: center;
+  font-size: 5em;
+  letter-spacing: 10px;
+  border: 8px solid #31caf0;
+  padding:25px;
+  margin: 10px;
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+ }
+
+ 
+ .imagen {
+  transform: scale(2); /* Duplica el tamaño de la imagen */
+  transform-origin: top left; /* Ajusta desde el punto de origen para la transformación */
+  grid-column: 1 / 6;
+  grid-row: 3 / 7;
+
+ }
+ 
+  .botones {
+    grid-column: 6 / 11; 
+    grid-row: 1 ; 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas internas para botones */
+    gap: 40px; /* Espacio entre los botones*/
+    padding: 20px;
+}
+
+.boton {
+  min-height: 80px;
+  min-width: 80px;
+  width: 100%; /* Ocupa todo el espacio disponible de su celda en la cuadrícula interna de botones */
+  height: 100%; /* El botón llena toda la celda */
+}
+button:nth-child(1) {
+  background-color: yellow;
+}
+ 
+button:nth-child(2) {
+  background-color: black;
+}
+ 
+button:nth-child(3) {
+  background-color: red;
+}
+ 
+button:nth-child(4) {
+  background-color: blue;
+}
+ 
+button:nth-child(5) {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.circulo {
+  grid-column: 5 / 6;
+  grid-row: 4 / 5;
+  width: 100px; 
+  height: 100px; 
+  background-color: rgb(247, 17, 197); 
+  border-radius: 50%; /* efecto de círculo */
+  justify-self: center; /* centra el círculo en la celda de la cuadrícula */
+  align-self: center; /* centra el círculo en la celda de la cuadrícula verticalmente */
+  transform: scale(3);
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+#clickCounter {
+  font-size: 2em; 
+  color: rgb(135, 76, 245); /* Cambia el color del texto si es necesario */
+ 
+}
+
+
+
+/* Estilos para la cuadrícula */
+.cuadricula {
+  display: grid;
+  grid-template-columns: repeat(11, 60px);
+  grid-template-rows: repeat(12, 60px);
+  gap: 0px;
+  grid-column: 7 / span 4; /* Posiciona la cuadrícula en las columnas 7 a 10 */
+  grid-row: 3 / span 4; /* Posiciona la cuadrícula en las filas 3 a 7 */
+  justify-self: center; /* Centrada horizontalmente */
+  align-self: center; /* Centrada verticalmente */
+  background-color: white;
+  border: 8px solid #00BFFF;
+  
+ 
+}
+.cuadro {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border: 2px solid black;
+  box-sizing: border-box; /* el borde dentro del tamaño del cuadro */
+}

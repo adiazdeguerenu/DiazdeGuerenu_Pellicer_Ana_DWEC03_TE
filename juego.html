@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <!--configuración vista en móviles  -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Quadrigramy</title>
+ <!-- enlace al fichero de estilos css -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--ebiblioteca jQuery   -->
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+  <!--enlace al archivo js  -->
+  <script src="script.js"></script>
+</head>
+
+
+<body>
+  <div id="contenedor">
+    <h1 id="nombreJuego">Quadrigramy</h1>
+
+    <div class="botones">
+      <!-- Botones para seleccionar colores o acciones -->
+      <button class="boton" id="colorYellow"></button>
+      <button class="boton" id="colorBlack"></button>
+      <button class="boton" id="colorRed"></button>
+      <button class="boton" id="colorBlue"></button>
+      <button class="boton" id="colorWhite"></button>
+    </div>
+
+    <!--imagen a copiar en la dinámica  -->
+    <img src="smile.png" alt="imagen a copiar" class="imagen">
+
+    <!--contenedor del contador  -->
+    <div class="circulo">
+      <span id="clickCounter">0</span> <!-- Contador de clicks -->
+    </div>
+    
+    <!--div del lienzo donde copiar  -->
+    <div id="cuadricula" class="cuadricula">
+    </div>
+        
+  </div>
+
+</body>
+</html>

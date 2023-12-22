@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Acceso al Juego</title>
+    <link rel="stylesheet" href="portadastyle.css">
+</head>
+
+<body> 
+    <!--Cabecera de la página   -->
+    <h1 id="nombreJuego">Quadrigramy</h1>
+
+     <!-- contenedor formulario para logearse  -->
+    <div id="login-form"> 
+
+        <!--titulo del formulario  -->
+        <h2>Acceso al Juego</h2>
+
+        <form id="form">
+             <!--campo entrada nombre usuario  -->
+            <div class="form-group">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" required>
+            </div>
+             <!--campo entrada contraseña -->
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+            </div>
+             <!--botón enviar -->
+            <button type="submit">Enviar</button>
+             <!--para mostrar el mensaje de error en un div  -->
+            <div id="error-msg"></div>
+        </form>
+    </div>
+
+     <!--enlace al js para que funcione la página   -->
+    <script src="portadascript.js"></script>
+
+</body>
+
+</html>
